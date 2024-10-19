@@ -7,3 +7,42 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.display-flex{
+    display: flex;
+}
+
+.text-gray{
+    color:#424242;
+
+}
+
+.text-light-gray{
+    color:#727272;
+
+}
+
+.bg-light{
+    background-color: rgba(255,144,14,0.1);
+
+}
+.navbar{
+    justify-content: space-between;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+    color:dar
+
+}
+
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.navbar,.banner{
+    max-width: 1440px;
+    margin:0px auto;
+}
