@@ -39,6 +39,10 @@ main>section{
 
 }
 
+.text-primary{
+    color: #FF900F;
+}
+
 .bg-light{
     background-color: rgba(255,144,14,0.1);
 
@@ -88,16 +92,16 @@ main>section{
     align-items: center;
 
 }
-.team-image-container{
+.team-img-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap:24px;
 }
-.our-feature{
+.our-features{
     margin: 130px;
     max-width: 530px;
 }
-.feature-title{
+.section-title{
     font-size: 2.5rem;
     font-weight: 700;
 }
@@ -105,7 +109,22 @@ main>section{
     font-weight: 500;
 }
 @media screen and (max-width:576px){
-    .navbar, .nav-link{
+    .navbar, .nav-link, .teams{
         flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .our-features{
+        margin-left: 40px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:992PX){
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin-left: 50px auto;
     }
 }
